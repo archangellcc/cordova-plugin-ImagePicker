@@ -287,7 +287,7 @@
         <source-file src="src/android/res/values/styles.xml" target-dir="res/values"/>
 
 
-
+        <framework src="com.android.support:support-v4:25.3.1" />
         <framework src="com.android.support:appcompat-v7:25.1.1" />
         <framework src="com.github.chrisbanes.photoview:library:1.2.4" />
         <framework src="com.android.support:recyclerview-v7:25.1.1" />
