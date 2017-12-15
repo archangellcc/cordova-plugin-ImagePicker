@@ -145,7 +145,9 @@
                 
                 //                    NSURL *URL = [info valueForKey:@"PHImageFileURLKey"];
                 //                    if(URL != NULL){
-                
+               if (![[info objectForKey:PHImageResultIsDegradedKey] boolValue]) {
+
+
                 NSString *sanboxPath =  [self saveAndGetImageDocuments:result withName:fileName];
                 
                 
@@ -161,6 +163,7 @@
                     _selectedAssets = nil;
                     
                 }
+               }
                 
             }];
             
