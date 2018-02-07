@@ -142,6 +142,9 @@ public class ImagePickerMain extends CordovaPlugin {
                 this.callbackContext.success(res);
 
             }
+        }else
+        {
+          this.callbackContext.error("cancel");
         }
     }
 }
